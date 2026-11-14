@@ -20,3 +20,21 @@ dependencies { // Блок объявления зависимостей про�
 tasks.test { // Настройка встроенной задачи `test` (запуск тестов)
     useJUnitPlatform() // Указывает Gradle запускать тесты через JUnit Platform
 }
+
+
+tasks.withType(Test).configureEach {
+    systemProperty 'selenide.browser',
+            System.getProperty('selenide.browser', 'chrome')
+
+    systemProperty 'selenide.headless',
+            System.getProperty('selenide.headless', 'false')
+
+    systemProperty 'chromeoptions.args',
+            System.getProperty('chromeoptions.args', '')
+
+    systemProperty 'webdriver.chrome.verboseLogging',
+            System.getProperty('webdriver.chrome.verboseLogging', 'false')
+
+    systemProperty 'webdriver.chrome.logfile',
+            System.getProperty('webdriver.chrome.logfile', 'chromedriver.log')
+}
