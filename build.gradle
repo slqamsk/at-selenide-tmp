@@ -1,0 +1,22 @@
+plugins { // Gradle-плагинов, подключаемых к проекту
+    id 'java' // Встроенный плагин Java — добавляет задачи компиляции, тестов, сборки jar и т.д.
+    id 'io.qameta.allure' version '4.3.0' // Плагин Allure — генерирует отчёты о тестах в формате Allure
+}
+repositories { // Блок объявления репозиториев, откуда Gradle будет скачивать зависимости
+    mavenCentral() // Использовать центральный репозиторий Maven
+}
+dependencies { // Блок объявления зависимостей проекта (библиотек, нужных для компиляции/тестов/запуска)
+    // JUnit
+    testImplementation platform('org.junit:junit-bom:6.1.3') // BOM (Bill of Materials) JUnit — задаёт согласованные версии всех артефактов JUnit, чтобы не указывать версию у каждой зависимости
+    testImplementation 'org.junit.jupiter:junit-jupiter' // Основная библиотека JUnit Jupiter (API для написания тестов: @Test, @BeforeEach и т.д.) — версия берётся из BOM
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher' // Лаунчер JUnit Platform — нужен только во время выполнения тестов, чтобы Gradle мог запускать движок JUnit
+    // Selenide
+    testImplementation 'com.codeborne:selenide:7.19.1' // Библиотека Selenide версии 7.19.1 — упрощает написание UI-тестов (открытие браузера, ожидания, локаторы)
+    // Allure
+    testImplementation platform('io.qameta.allure:allure-bom:3.0.0') // BOM Allure — фиксирует согласованные версии всех модулей Allure (чтобы не указывать версии вручную)
+    testImplementation 'io.qameta.allure:allure-jupiter' // Интеграция Allure с JUnit 5 — добавляет аннотации (@Step, @Attachment и др.) и позволяет собирать шаги тестов в отчёт
+    testImplementation 'io.qameta.allure:allure-selenide' // Интеграция Allure с Selenide — автоматически прикрепляет к отчёту скриншоты, HTML-страницы и логи браузера
+}
+tasks.test { // Настройка встроенной задачи `test` (запуск тестов)
+    useJUnitPlatform() // Указывает Gradle запускать тесты через JUnit Platform
+}
