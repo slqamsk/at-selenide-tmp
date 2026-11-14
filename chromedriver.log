@@ -1,0 +1,158 @@
+[1794620364.356][INFO]: Starting ChromeDriver 156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705}) on port 29077
+[1794620364.356][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1794620364.366][INFO]: ChromeDriver was started successfully on port 29077
+[1794620364.493][INFO]: [554e08a326ec65700dc1db5a265e7199] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--disable-search-engine-choice-screen", "--unsafely-disable-devtools-self-xss-warnings", "--disable-smooth-scrolling", "--window-size=1366,768" ],
+            "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "autofill.credit_card_enabled": false,
+               "autofill.profile_enabled": false,
+               "credentials_enable_service": false,
+               "download.default_directory": "E:\\YandexDisk\\IdeaProjects\\at-selenide-tmp\\build\\downloads\\1794620363839_15560_3_0",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1,
+               "profile.password_manager_enabled": false,
+               "profile.password_manager_leak_detection": false,
+               "safebrowsing.enabled": true
+            }
+         },
+         "pageLoadStrategy": "normal",
+         "unhandledPromptBehavior": "ignore"
+      } ]
+   }
+}
+[1794620364.495][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "credit_card_enabled": false,
+      "enabled": false,
+      "profile_enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "E:\\YandexDisk\\IdeaProjects\\at-selenide-tmp\\build\\downloads\\1794620363839_15560_3_0"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false,
+      "password_manager_leak_detection": false
+   },
+   "safebrowsing": {
+      "enabled": true
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1794620364.495][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1794620364.496][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1794620364.496][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1794620364.498][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-features=IgnoreDuplicateNavs,Prewarm --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-search-engine-choice-screen --disable-smooth-scrolling --disable-sync --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --unsafely-disable-devtools-self-xss-warnings --use-mock-keychain --user-data-dir="C:\Users\SSLESA~1\AppData\Local\Temp\scoped_dir24672_1004208039" --window-size=1366,768 data:,
+[1794620364.983][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1794620365.030][INFO]: [554e08a326ec65700dc1db5a265e7199] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "156.0.8078.81",
+      "chrome": {
+         "chromedriverVersion": "156.0.8078.80 (fb096c0011f9d50f0a264a9376420cdea9c421e3-refs/branch-heads/8078@{#1705})",
+         "userDataDir": "C:\\Users\\SSLESA~1\\AppData\\Local\\Temp\\scoped_dir24672_1004208039"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:49621"
+      },
+      "goog:processID": 12244,
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "ignore",
+      "webauthn:extension:cmtgKey": true,
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "~~~": "..."
+   },
+   "sessionId": "554e08a326ec65700dc1db5a265e7199"
+}
+[1794620365.409][INFO]: [554e08a326ec65700dc1db5a265e7199] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1794620365.409][INFO]: [554e08a326ec65700dc1db5a265e7199] RESPONSE SetTimeouts
+[1794620365.422][INFO]: [554e08a326ec65700dc1db5a265e7199] COMMAND Navigate {
+   "url": "https://slqa.ru/demo/slshop/v02/"
+}
+[1794620365.422][INFO]: Waiting for pending navigations...
+[1794620365.426][INFO]: Done waiting for pending navigations. Status: ok
+[1794620365.852][INFO]: Waiting for pending navigations...
+[1794620365.967][INFO]: Done waiting for pending navigations. Status: ok
+[1794620365.967][INFO]: [554e08a326ec65700dc1db5a265e7199] RESPONSE Navigate
+[1794620366.149][INFO]: [554e08a326ec65700dc1db5a265e7199] COMMAND Quit {
+}
+[1794620366.199][INFO]: [554e08a326ec65700dc1db5a265e7199] RESPONSE Quit
